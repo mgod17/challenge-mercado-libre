@@ -1,0 +1,13 @@
+[
+    { "name": "series_code",      "type": "STRING", "mode": "REQUIRED" },
+    { "name": "series_name",      "type": "STRING", "mode": "REQUIRED" },
+    { "name": "country_code",     "type": "STRING", "mode": "REQUIRED" },
+    { "name": "country_name",     "type": "STRING", "mode": "REQUIRED" },
+    { "name": "countryiso3code",  "type": "STRING", "mode": "NULLABLE" },
+    { "name": "date",             "type": "DATE",   "mode": "REQUIRED" },
+    { "name": "value",            "type": "FLOAT",  "mode": "NULLABLE" },
+    { "name": "unit",             "type": "STRING", "mode": "NULLABLE" },
+    { "name": "obs_status",       "type": "STRING", "mode": "NULLABLE" },
+    { "name": "decimal",          "type": "INTEGER","mode": "NULLABLE" }
+  ]
+  
