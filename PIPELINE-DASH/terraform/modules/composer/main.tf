@@ -5,7 +5,7 @@ resource "google_composer_environment" "airflow" {
 
   config {
     software_config {
-      image_version = "composer-2.13.0-airflow-2.10.5"  # versión estable
+      image_version = "composer-2.13.0-airflow-2.10.5"  
       env_variables = {
         BQ_PROJECT = var.gcp_project
         BQ_DATASET = "wdi_staging"
@@ -14,7 +14,7 @@ resource "google_composer_environment" "airflow" {
     }
   }
 
-  # Un bucket para DAGs 
+ 
 }
 
 

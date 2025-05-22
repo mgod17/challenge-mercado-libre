@@ -5,10 +5,7 @@ terraform {
       source  = "hashicorp/google"
       version = ">= 4.0"
     }
-    # looker = {
-    #   source  = "looker/looker"
-    #   version = ">= 1.0"
-    # }
+  
   }
 
   backend "gcs" {
@@ -17,7 +14,6 @@ terraform {
   }
 }
 
-# Provider y región
 provider "google" {
   project = var.gcp_project
   region  = var.gcp_region
@@ -50,19 +46,3 @@ module "composer" {
   gcp_region    = var.gcp_region
 }
 
-
-#  Recursos Looker (opcional)
-# module "looker" {
-#   source            = "./looker.tf"
-#   looker_url        = var.looker_url
-#   looker_client_id  = var.looker_client_id
-#   looker_client_secret = var.looker_client_secret
-# }
-
-# provider "looker" {
-#   looker_url    = var.looker_url
-#   client_id     = var.looker_client_id
-#   client_secret = var.looker_client_secret
-# }
-
-# Llamada a módulos

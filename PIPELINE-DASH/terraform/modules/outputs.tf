@@ -8,12 +8,3 @@ output "bucket_raw" {
   value       = module.storage.raw_bucket_name
 }
 
-# output "bq_dataset_staging" {
-#   description = "Dataset de staging en BigQuery"
-#   value       = module.bigquery.staging_dataset_id
-# }
-
-# output "cloud_function_url" {
-#   description = "URL de la Cloud Function"
-#   value       = module.function.function_url
-# }
